@@ -158,3 +158,89 @@ body {
 .border-glass { border-color: var(--border-glass) !important; }
 .max-w-600 { max-width: 600px; }
 .max-w-700 { max-width: 700px; }
+
+.form-control-neon,
+.form-select-neon {
+  background-color: var(--bg-dark-soft) !important;
+  border: 1px solid var(--border-glass) !important;
+  color: #fff !important;
+  padding: 0.85rem 1rem;
+  transition: all 0.3s ease;
+}
+
+.form-control-neon::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.form-control-neon:focus,
+.form-select-neon:focus {
+  border-color: var(--neon-cyan) !important;
+  box-shadow: 0 0 15px rgba(0, 240, 255, 0.3) !important;
+  outline: none;
+}
+
+.form-control-neon:valid:not(:placeholder-shown) {
+  border-color: var(--neon-cyan) !important;
+}
+
+.btn-radio-neon {
+  background: var(--bg-dark-soft);
+  border: 1px solid var(--border-glass);
+  color: var(--text-main);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-radio-neon:hover {
+  border-color: var(--neon-cyan);
+  background: rgba(0, 240, 255, 0.05);
+}
+
+.btn-check:checked + .btn-radio-neon {
+  background: rgba(0, 240, 255, 0.12) !important;
+  border-color: var(--neon-cyan) !important;
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.3);
+  color: #fff !important;
+}
+
+.btn-checkbox-neon {
+  background: var(--bg-dark-soft);
+  border: 1px solid var(--border-glass);
+  color: rgba(255, 255, 255, 0.7);
+  transition: all 0.25s ease;
+}
+
+.btn-check:checked + .btn-checkbox-neon {
+  background: rgba(255, 0, 127, 0.15) !important;
+  border-color: var(--neon-magenta) !important;
+  color: #fff !important;
+  box-shadow: 0 0 12px rgba(255, 0, 127, 0.3);
+}
+
+.top-100 {
+  top: 100px;
+}
+
+.extra-small {
+  font-size: 0.75rem;
+}
+
+.btn-filter-neon {
+  background: var(--bg-dark-soft);
+  border: 1px solid var(--border-glass);
+  color: rgba(255, 255, 255, 0.7);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+}
+
+.btn-filter-neon:hover {
+  color: #fff;
+  border-color: var(--neon-cyan);
+  background: rgba(0, 240, 255, 0.08);
+}
+
+.btn-check:checked + .btn-filter-neon {
+  background: var(--neon-cyan) !important;
+  color: #000 !important;
+  border-color: var(--neon-cyan) !important;
+  box-shadow: 0 0 15px var(--neon-cyan-glow);
+}

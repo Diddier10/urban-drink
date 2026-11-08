@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>URBAN DRINK | Menú Completo de Granizados</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="bg-ice-dark text-light min-vh-100 d-flex flex-column">
+
+  <header class="sticky-top navbar-glass">
+    <nav class="navbar navbar-expand-lg navbar-dark container py-3" aria-label="Navegación principal">
+      <a class="navbar-brand d-flex align-items-center gap-2 fw-black fs-3 text-uppercase tracking-wider" href="/index.html">
+        <span class="icon-ice-cube text-cyan" aria-hidden="true">⚡</span>
+        <span>URBAN<mark class="text-gradient-cyan bg-transparent p-0">DRINK</mark></span>
+      </a>
+
+      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navFrozen" aria-controls="navFrozen" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <section class="collapse navbar-collapse justify-content-end" id="navFrozen">
+        <ul class="navbar-nav align-items-lg-center gap-lg-3 pt-3 pt-lg-0">
+          <li class="nav-item"><a class="nav-link text-white-50" href="/index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link active fw-bold text-cyan" aria-current="page" href="/paginas/menu.html">Menú Explosivo</a></li>
+          <li class="nav-item"><a class="nav-link text-white-50" href="/paginas/domicilios.html">Domicilios</a></li>
+          <li class="nav-item ms-lg-2">
+            <a class="btn btn-neon-cyan fw-bold px-4 rounded-pill w-100 w-lg-auto mt-2 mt-lg-0 shadow-neon" href="/paginas/domicilios.html">
+              <i class="bi bi-cup-straw me-2" aria-hidden="true"></i>Pedir Ya
+            </a>
+          </li>
+        </ul>
+      </section>
+    </nav>
+  </header>
+  <main class="container flex-grow-1 py-4 py-lg-5">
+
+    <header class="text-center max-w-700 mx-auto mb-5">
+      <mark class="badge bg-cyan text-dark px-3 py-2 rounded-pill fw-bold text-uppercase tracking-wider mb-2 d-inline-block">
+        <i class="bi bi-fire me-1" aria-hidden="true"></i> Carta Oficial 2026
+      </mark>
+      <h1 class="display-4 fw-black text-white">NUESTRO MENÚ EXPLOSIVO</h1>
+      <p class="text-white-50 fs-5">Explora nuestras combinaciones artesanales preparadas con hielo de nieve y toppings ilimitados.</p>
+    </header>
+
+    <nav aria-label="Filtro de categorías de producto" class="mb-5">
+      <form class="d-flex flex-wrap justify-content-center gap-2 max-w-700 mx-auto">
+        <fieldset class="border-0 p-0 m-0 d-flex flex-wrap justify-content-center gap-2">
+          <legend class="sr-only">Filtrar por categoría de granizado</legend>
+
+          <input type="radio" class="btn-check" name="filtro-categoria" id="cat-todos" checked>
+          <label class="btn btn-filter-neon rounded-pill px-4 py-2 small fw-bold" for="cat-todos">Todos los Sabores</label>
+
+          <input type="radio" class="btn-check" name="filtro-categoria" id="cat-citricos">
+          <label class="btn btn-filter-neon rounded-pill px-4 py-2 small fw-bold" for="cat-citricos">🍋 Ácidos & Picantes</label>
+
+          <input type="radio" class="btn-check" name="filtro-categoria" id="cat-frutales">
+          <label class="btn btn-filter-neon rounded-pill px-4 py-2 small fw-bold" for="cat-frutales">🍓 Frutos Dulces</label>
+
+          <input type="radio" class="btn-check" name="filtro-categoria" id="cat-cremosos">
+          <label class="btn btn-filter-neon rounded-pill px-4 py-2 small fw-bold" for="cat-cremosos">🥛 Cremosos & Coco</label>
+        </fieldset>
+      </form>
+    </nav>
+
+    <ul class="row g-4 list-unstyled m-0">
+
+      <li class="col-12 col-md-6 col-lg-4">
+        <article class="card glass-card h-100 border-0 rounded-5 overflow-hidden card-neon-hover">
+          <header class="position-relative">
+            <figure class="m-0 ratio ratio-4x3">
+              <img src="https://images.unsplash.com/photo-1546173159-315724a31696?auto=format&fit=crop&w=600&q=80" alt="Granizado Blue Raspberry Neón" class="card-img-top object-fit-cover">
+            </figure>
+            <mark class="badge bg-cyan text-dark fw-bold position-absolute top-0 end-0 m-3 rounded-pill px-3 py-2">
+              Más Vendido 🔥
+            </mark>
+          </header>
+
+          <section class="card-body p-4 d-flex flex-column">
+            <header class="d-flex justify-content-between align-items-start mb-2">
+              <h2 class="h4 fw-bold text-white m-0">Blue Electric Blast</h2>
+              <data value="12000" class="text-cyan fw-black fs-4">$12.000</data>
+            </header>
+
+            <p class="text-white-50 small mb-3">
+              Mora azul purificada, soda michelada de limón real y una lluvia de gomitas ácidas importadas.
+            </p>
+
+            <details class="custom-details bg-dark-soft p-3 rounded-4 border border-glass mb-4 text-white-50 small">
+              <summary class="fw-bold text-cyan cursor-pointer d-flex justify-content-between align-items-center">
+                <span>Ver ficha de intensidad</span>
+                <i class="bi bi-chevron-down" aria-hidden="true"></i>
+              </summary>
+              <dl class="row g-1 m-0 pt-2 border-top border-glass mt-2">
+                <dt class="col-6 fw-normal">Nivel de Acidez:</dt>
+                <dd class="col-6 text-end text-warning fw-bold mb-0">⚡⚡⚡ (Alta)</dd>
+                <dt class="col-6 fw-normal">Base:</dt>
+                <dd class="col-6 text-end text-white mb-0">Mora Azul / Limón</dd>
+                <dt class="col-6 fw-normal">Topping sugerido:</dt>
+                <dd class="col-6 text-end text-cyan mb-0">Perlas explosivas</dd>
+              </dl>
+            </details>
+
+            <footer class="mt-auto pt-3 border-top border-glass d-flex justify-content-between align-items-center">
+              <mark class="badge bg-dark-soft text-cyan border border-cyan-subtle">16 oz / 24 oz</mark>
+              <a href="domicilios.html" class="btn btn-sm btn-neon-cyan px-3 py-2 rounded-pill fw-bold">
+                Pedir Este <i class="bi bi-arrow-right ms-1" aria-hidden="true"></i>
+              </a>
+            </footer>
+          </section>
+        </article>
+      </li>
+
+      <li class="col-12 col-md-6 col-lg-4">
+        <article class="card glass-card h-100 border-0 rounded-5 overflow-hidden card-neon-hover border-start border-warning border-4">
+          <header class="position-relative">
+            <figure class="m-0 ratio ratio-4x3">
+              <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=600&q=80" alt="Granizado Mango Biche Picante" class="card-img-top object-fit-cover">
+            </figure>
+            <mark class="badge bg-magenta text-white fw-bold position-absolute top-0 end-0 m-3 rounded-pill px-3 py-2">
+              Picante 🌶️
+            </mark>
+          </header>
+
+          <section class="card-body p-4 d-flex flex-column">
+            <header class="d-flex justify-content-between align-items-start mb-2">
+              <h2 class="h4 fw-bold text-white m-0">Mango Biche Extreme</h2>
+              <data value="14000" class="text-cyan fw-black fs-4">$14.000</data>
+            </header>
+
+            <p class="text-white-50 small mb-3">
+              Extracto concentrado de mango verde, sal marina, tiras artesanales de mango biche y volcán de Tajín.
+            </p>
+
+            <details class="custom-details bg-dark-soft p-3 rounded-4 border border-glass mb-4 text-white-50 small">
+              <summary class="fw-bold text-cyan cursor-pointer d-flex justify-content-between align-items-center">
+                <span>Ver ficha de intensidad</span>
+                <i class="bi bi-chevron-down" aria-hidden="true"></i>
+              </summary>
+              <dl class="row g-1 m-0 pt-2 border-top border-glass mt-2">
+                <dt class="col-6 fw-normal">Nivel de Acidez:</dt>
+                <dd class="col-6 text-end text-danger fw-bold mb-0">⚡⚡⚡⚡ (Extrema)</dd>
+                <dt class="col-6 fw-normal">Base:</dt>
+                <dd class="col-6 text-end text-white mb-0">Mango Verde</dd>
+                <dt class="col-6 fw-normal">Topping sugerido:</dt>
+                <dd class="col-6 text-end text-warning mb-0">Chamoy picante</dd>
+              </dl>
+            </details>
+
+            <footer class="mt-auto pt-3 border-top border-glass d-flex justify-content-between align-items-center">
+              <mark class="badge bg-dark-soft text-warning border border-warning-subtle">16 oz / 24 oz</mark>
+              <a href="domicilios.html" class="btn btn-sm btn-neon-cyan px-3 py-2 rounded-pill fw-bold">
+                Pedir Este <i class="bi bi-arrow-right ms-1" aria-hidden="true"></i>
+              </a>
+            </footer>
+          </section>
+        </article>
+      </li>
+
+      <li class="col-12 col-md-6 col-lg-4">
+        <article class="card glass-card h-100 border-0 rounded-5 overflow-hidden card-neon-hover">
+          <header class="position-relative">
+            <figure class="m-0 ratio ratio-4x3">
+              <img src="https://images.unsplash.com/photo-1499638673689-79a0b5115d87?auto=format&fit=crop&w=600&q=80" alt="Granizado Maracuyá Coco" class="card-img-top object-fit-cover">
+            </figure>
+          </header>
+
+          <section class="card-body p-4 d-flex flex-column">
+            <header class="d-flex justify-content-between align-items-start mb-2">
+              <h2 class="h4 fw-bold text-white m-0">Tropical Passion</h2>
+              <data value="13500" class="text-cyan fw-black fs-4">$13.500</data>
+            </header>
+
+            <p class="text-white-50 small mb-3">
+              Pulpa de maracuyá fresco, base de leche de coco escarchada, lecherita y perlas explosivas de fruta.
+            </p>
+
+            <details class="custom-details bg-dark-soft p-3 rounded-4 border border-glass mb-4 text-white-50 small">
+              <summary class="fw-bold text-cyan cursor-pointer d-flex justify-content-between align-items-center">
+                <span>Ver ficha de intensidad</span>
+                <i class="bi bi-chevron-down" aria-hidden="true"></i>
+              </summary>
+              <dl class="row g-1 m-0 pt-2 border-top border-glass mt-2">
+                <dt class="col-6 fw-normal">Nivel de Acidez:</dt>
+                <dd class="col-6 text-end text-success fw-bold mb-0">⚡⚡ (Balanceado)</dd>
+                <dt class="col-6 fw-normal">Base:</dt>
+                <dd class="col-6 text-end text-white mb-0">Maracuyá / Coco</dd>
+                <dt class="col-6 fw-normal">Topping sugerido:</dt>
+                <dd class="col-6 text-end text-cyan mb-0">Leche condensada</dd>
+              </dl>
+            </details>
+
+            <footer class="mt-auto pt-3 border-top border-glass d-flex justify-content-between align-items-center">
+              <mark class="badge bg-dark-soft text-success border border-success-subtle">16 oz / 24 oz</mark>
+              <a href="domicilios.html" class="btn btn-sm btn-neon-cyan px-3 py-2 rounded-pill fw-bold">
+                Pedir Este <i class="bi bi-arrow-right ms-1" aria-hidden="true"></i>
+              </a>
+            </footer>
+          </section>
+        </article>
+      </li>
+
+      <li class="col-12 col-md-6 col-lg-4">
+        <article class="card glass-card h-100 border-0 rounded-5 overflow-hidden card-neon-hover">
+          <header class="position-relative">
+            <figure class="m-0 ratio ratio-4x3">
+              <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=600&q=80" alt="Granizado Frutos Rojos" class="card-img-top object-fit-cover">
+            </figure>
+            <mark class="badge bg-magenta text-white fw-bold position-absolute top-0 end-0 m-3 rounded-pill px-3 py-2">
+              Dulce 🍓
+            </mark>
+          </header>
+
+          <section class="card-body p-4 d-flex flex-column">
+            <header class="d-flex justify-content-between align-items-start mb-2">
+              <h2 class="h4 fw-bold text-white m-0">Berry Explosion</h2>
+              <data value="13000" class="text-cyan fw-black fs-4">$13.000</data>
+            </header>
+
+            <p class="text-white-50 small mb-3">
+              Mezcla artesanal de fresa, frambuesa y arándanos macerados con lluvia de M&M's crujientes.
+            </p>
+
+            <details class="custom-details bg-dark-soft p-3 rounded-4 border border-glass mb-4 text-white-50 small">
+              <summary class="fw-bold text-cyan cursor-pointer d-flex justify-content-between align-items-center">
+                <span>Ver ficha de intensidad</span>
+                <i class="bi bi-chevron-down" aria-hidden="true"></i>
+              </summary>
+              <dl class="row g-1 m-0 pt-2 border-top border-glass mt-2">
+                <dt class="col-6 fw-normal">Nivel de Acidez:</dt>
+                <dd class="col-6 text-end text-info fw-bold mb-0">⚡ (Bajo / Dulce)</dd>
+                <dt class="col-6 fw-normal">Base:</dt>
+                <dd class="col-6 text-end text-white mb-0">Frutos Rojos</dd>
+                <dt class="col-6 fw-normal">Topping sugerido:</dt>
+                <dd class="col-6 text-end text-magenta mb-0">Gomitas Dulces</dd>
+              </dl>
+            </details>
+
+            <footer class="mt-auto pt-3 border-top border-glass d-flex justify-content-between align-items-center">
+              <mark class="badge bg-dark-soft text-magenta border border-magenta-subtle">16 oz / 24 oz</mark>
+              <a href="domicilios.html" class="btn btn-sm btn-neon-cyan px-3 py-2 rounded-pill fw-bold">
+                Pedir Este <i class="bi bi-arrow-right ms-1" aria-hidden="true"></i>
+              </a>
+            </footer>
+          </section>
+        </article>
+      </li>
+
+      <li class="col-12 col-md-6 col-lg-4">
+        <article class="card glass-card h-100 border-0 rounded-5 overflow-hidden card-neon-hover">
+          <header class="position-relative">
+            <figure class="m-0 ratio ratio-4x3">
+              <img src="https://images.unsplash.com/photo-1541658016709-82535e94bc69?auto=format&fit=crop&w=600&q=80" alt="Granizado Limonada de Coco" class="card-img-top object-fit-cover">
+            </figure>
+          </header>
+
+          <section class="card-body p-4 d-flex flex-column">
+            <header class="d-flex justify-content-between align-items-start mb-2">
+              <h2 class="h4 fw-bold text-white m-0">Coco Cream Blast</h2>
+              <data value="15000" class="text-cyan fw-black fs-4">$15.000</data>
+            </header>
+
+            <p class="text-white-50 small mb-3">
+              Limonada de coco gourmet ultra batida con crema de coco tostado y escarchado de leche condensada.
+            </p>
+
+            <details class="custom-details bg-dark-soft p-3 rounded-4 border border-glass mb-4 text-white-50 small">
+              <summary class="fw-bold text-cyan cursor-pointer d-flex justify-content-between align-items-center">
+                <span>Ver ficha de intensidad</span>
+                <i class="bi bi-chevron-down" aria-hidden="true"></i>
+              </summary>
+              <dl class="row g-1 m-0 pt-2 border-top border-glass mt-2">
+                <dt class="col-6 fw-normal">Nivel de Acidez:</dt>
+                <dd class="col-6 text-end text-success fw-bold mb-0">⚡⚡ (Suave)</dd>
+                <dt class="col-6 fw-normal">Base:</dt>
+                <dd class="col-6 text-end text-white mb-0">Coco Gourmet</dd>
+                <dt class="col-6 fw-normal">Topping sugerido:</dt>
+                <dd class="col-6 text-end text-white mb-0">Coco Rallado</dd>
+              </dl>
+            </details>
+
+            <footer class="mt-auto pt-3 border-top border-glass d-flex justify-content-between align-items-center">
+              <mark class="badge bg-dark-soft text-light border border-light-subtle">16 oz / 24 oz</mark>
+              <a href="domicilios.html" class="btn btn-sm btn-neon-cyan px-3 py-2 rounded-pill fw-bold">
+                Pedir Este <i class="bi bi-arrow-right ms-1" aria-hidden="true"></i>
+              </a>
+            </footer>
+          </section>
+        </article>
+      </li>
+
+      <li class="col-12 col-md-6 col-lg-4">
+        <article class="card glass-card h-100 border-0 rounded-5 overflow-hidden card-neon-hover">
+          <header class="position-relative">
+            <figure class="m-0 ratio ratio-4x3">
+              <img src="https://images.unsplash.com/photo-1587888637140-849b25d80ef9?auto=format&fit=crop&w=600&q=80" alt="Granizado Sandía Chamoy" class="card-img-top object-fit-cover">
+            </figure>
+            <mark class="badge bg-cyan text-dark fw-bold position-absolute top-0 end-0 m-3 rounded-pill px-3 py-2">
+              Refrescante 🍉
+            </mark>
+          </header>
+
+          <section class="card-body p-4 d-flex flex-column">
+            <header class="d-flex justify-content-between align-items-start mb-2">
+              <h2 class="h4 fw-bold text-white m-0">Watermelon Chamoy</h2>
+              <data value="13500" class="text-cyan fw-black fs-4">$13.500</data>
+            </header>
+
+            <p class="text-white-50 small mb-3">
+              Base de sandía roja helada con infusión de soda de limón, escarchado de chamoy agridulce y miguelito.
+            </p>
+
+            <details class="custom-details bg-dark-soft p-3 rounded-4 border border-glass mb-4 text-white-50 small">
+              <summary class="fw-bold text-cyan cursor-pointer d-flex justify-content-between align-items-center">
+                <span>Ver ficha de intensidad</span>
+                <i class="bi bi-chevron-down" aria-hidden="true"></i>
+              </summary>
+              <dl class="row g-1 m-0 pt-2 border-top border-glass mt-2">
+                <dt class="col-6 fw-normal">Nivel de Acidez:</dt>
+                <dd class="col-6 text-end text-warning fw-bold mb-0">⚡⚡⚡ (Agridulce)</dd>
+                <dt class="col-6 fw-normal">Base:</dt>
+                <dd class="col-6 text-end text-white mb-0">Sandía / Chamoy</dd>
+                <dt class="col-6 fw-normal">Topping sugerido:</dt>
+                <dd class="col-6 text-end text-danger mb-0">Tiras de Pulparindo</dd>
+              </dl>
+            </details>
+
+            <footer class="mt-auto pt-3 border-top border-glass d-flex justify-content-between align-items-center">
+              <mark class="badge bg-dark-soft text-danger border border-danger-subtle">16 oz / 24 oz</mark>
+              <a href="domicilios.html" class="btn btn-sm btn-neon-cyan px-3 py-2 rounded-pill fw-bold">
+                Pedir Este <i class="bi bi-arrow-right ms-1" aria-hidden="true"></i>
+              </a>
+            </footer>
+          </section>
+        </article>
+      </li>
+
+    </ul>
+  </main>
+
+  <footer class="footer-glass mt-auto border-top border-glass py-5">
+    <section class="container text-center text-white-50 small">
+      <p class="m-0">&copy; <time datetime="2026">2026</time> URBAN DRINK. Todos los derechos reservados.</p>
+    </section>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

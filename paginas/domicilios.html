@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>URBAN DRINK | Domicilios & Pedidos Express</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="bg-ice-dark text-light min-vh-100 d-flex flex-column">
+  <header class="sticky-top navbar-glass">
+    <nav class="navbar navbar-expand-lg navbar-dark container py-3" aria-label="Navegación principal">
+      <a class="navbar-brand d-flex align-items-center gap-2 fw-black fs-3 text-uppercase tracking-wider" href="../index.html">
+        <span class="icon-ice-cube text-cyan" aria-hidden="true">⚡</span>
+        <span>URBAN<mark class="text-gradient-cyan bg-transparent p-0">DRINK</mark></span>
+      </a>
+
+      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navFrozen" aria-controls="navFrozen" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <section class="collapse navbar-collapse justify-content-end" id="navFrozen">
+        <ul class="navbar-nav align-items-lg-center gap-lg-3 pt-3 pt-lg-0">
+          <li class="nav-item"><a class="nav-link text-white-50" href="/index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link text-white-50" href="/index.html#menu">Menú Explosivo</a></li>
+          <li class="nav-item"><a class="nav-link active fw-bold text-cyan" aria-current="page" href="/domicilios.html">Domicilios</a></li>
+        </ul>
+      </section>
+    </nav>
+  </header>
+
+  <main class="container flex-grow-1 py-4 py-lg-5">
+
+    <header class="text-center max-w-700 mx-auto mb-5">
+      <mark class="badge bg-magenta-glow text-white px-3 py-2 rounded-pill fw-bold text-uppercase tracking-wider mb-2 d-inline-block">
+        <i class="bi bi-rocket-takeoff me-1" aria-hidden="true"></i> Entrega Fría Garantizada
+      </mark>
+      <h1 class="display-4 fw-black text-white">PIDE TU BLAST A DOMICILIO</h1>
+      <p class="text-white-50 fs-5">Empacado en contenedor térmico especial para que llegue a -5°C a tu puerta.</p>
+    </header>
+
+    <form action="https://httpbin.org/post" method="POST" class="needs-validation" novalidate>
+      <section class="row g-4 g-lg-5">
+        
+        <section class="col-12 col-lg-7">
+          
+          <fieldset class="glass-card p-4 p-md-5 rounded-5 border border-glass mb-4">
+            <legend class="float-none w-auto px-3 py-1 fs-6 fw-bold text-cyan border border-cyan-subtle rounded-pill bg-dark-soft">
+              PASO 1: ARMA TU COMBINACIÓN
+            </legend>
+
+            <section class="mb-4">
+              <label class="form-label fw-bold text-white d-block mb-3">1. Selecciona el Tamaño del Vaso:</label>
+              <section class="row g-3">
+                
+                <p class="col-4 mb-0">
+                  <input type="radio" class="btn-check" name="tamano" id="tamano12" value="12oz" required checked>
+                  <label class="btn btn-radio-neon w-100 py-3 rounded-4 text-center d-flex flex-column align-items-center justify-content-center h-100" for="tamano12">
+                    <span class="fs-4 fw-black d-block">12 oz</span>
+                    <small class="text-white-50">Clásico</small>
+                    <data value="10000" class="fw-bold text-cyan mt-1">$10.000</data>
+                  </label>
+                </p>
+
+                <p class="col-4 mb-0">
+                  <input type="radio" class="btn-check" name="tamano" id="tamano16" value="16oz" required>
+                  <label class="btn btn-radio-neon w-100 py-3 rounded-4 text-center d-flex flex-column align-items-center justify-content-center h-100" for="tamano16">
+                    <span class="fs-4 fw-black d-block">16 oz</span>
+                    <small class="text-white-50">Explosión</small>
+                    <data value="14000" class="fw-bold text-cyan mt-1">$14.000</data>
+                  </label>
+                </p>
+
+                <p class="col-4 mb-0">
+                  <input type="radio" class="btn-check" name="tamano" id="tamano24" value="24oz" required>
+                  <label class="btn btn-radio-neon w-100 py-3 rounded-4 text-center d-flex flex-column align-items-center justify-content-center h-100" for="tamano24">
+                    <span class="fs-4 fw-black d-block">24 oz</span>
+                    <small class="text-white-50">Bestia</small>
+                    <data value="18000" class="fw-bold text-cyan mt-1">$18.000</data>
+                  </label>
+                </p>
+
+              </section>
+            </section>
+
+            <section class="mb-4">
+              <label for="base" class="form-label fw-bold text-white">2. Sabor de Base Escarchada:</label>
+              <select id="base" name="base" class="form-select form-select-neon bg-dark-soft text-white border-glass rounded-4 py-3" required>
+                <option value="" disabled selected>Elige un sabor concentrado...</option>
+                <option value="blue">Blue Raspberry (Mora Azul Neón)</option>
+                <option value="mango">Mango Biche Verde con Chamoy</option>
+                <option value="maracuya">Maracuyá Tropical Macerado</option>
+                <option value="limonada">Limonada de Coco Helada</option>
+                <option value="frutos-rojos">Frutos Rojos Silvestres</option>
+              </select>
+            </section>
+
+            <section class="mb-2">
+              <label class="form-label fw-bold text-white d-block mb-2">3. Adiciona tus Toppings (Incluye 2 gratis):</label>
+              <section class="row g-2">
+                <p class="col-6 col-md-4 mb-0">
+                  <input type="checkbox" class="btn-check" id="top-gomitas" name="toppings" value="gomitas" checked>
+                  <label class="btn btn-checkbox-neon w-100 py-2 rounded-3 text-start small" for="top-gomitas">
+                    🍬 Gomitas Ácidas
+                  </label>
+                </p>
+                <p class="col-6 col-md-4 mb-0">
+                  <input type="checkbox" class="btn-check" id="top-perlas" name="toppings" value="perlas" checked>
+                  <label class="btn btn-checkbox-neon w-100 py-2 rounded-3 text-start small" for="top-perlas">
+                    🔮 Perlas Explosivas
+                  </label>
+                </p>
+                <p class="col-6 col-md-4 mb-0">
+                  <input type="checkbox" class="btn-check" id="top-lecherita" name="toppings" value="lecherita">
+                  <label class="btn btn-checkbox-neon w-100 py-2 rounded-3 text-start small" for="top-lecherita">
+                    🥛 Leche Condensada
+                  </label>
+                </p>
+                <p class="col-6 col-md-4 mb-0">
+                  <input type="checkbox" class="btn-check" id="top-tajin" name="toppings" value="tajin">
+                  <label class="btn btn-checkbox-neon w-100 py-2 rounded-3 text-start small" for="top-tajin">
+                    🌶️ Polvo Tajín Extra
+                  </label>
+                </p>
+                <p class="col-6 col-md-4 mb-0">
+                  <input type="checkbox" class="btn-check" id="top-mms" name="toppings" value="mms">
+                  <label class="btn btn-checkbox-neon w-100 py-2 rounded-3 text-start small" for="top-mms">
+                    🍫 M&M's Crujientes
+                  </label>
+                </p>
+              </section>
+            </section>
+
+          </fieldset>
+
+          <fieldset class="glass-card p-4 p-md-5 rounded-5 border border-glass">
+            <legend class="float-none w-auto px-3 py-1 fs-6 fw-bold text-magenta border border-magenta-subtle rounded-pill bg-dark-soft">
+              PASO 2: DATOS DE ENVÍO
+            </legend>
+
+            <section class="row g-3">
+              
+              <p class="col-12 col-md-6 mb-0">
+                <label for="nombre" class="form-label text-white-50 small fw-bold">Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre" class="form-control form-control-neon" required minlength="3" placeholder="Ej. Mariana Ríos">
+              </p>
+
+              <p class="col-12 col-md-6 mb-0">
+                <label for="telefono" class="form-label text-white-50 small fw-bold">Celular (WhatsApp):</label>
+                <input type="tel" id="telefono" name="telefono" class="form-control form-control-neon" required pattern="3[0-9]{9}" placeholder="Ej. 3001234567">
+              </p>
+
+              <p class="col-12 col-md-8 mb-0">
+                <label for="direccion" class="form-label text-white-50 small fw-bold">Dirección Completa de Entrega:</label>
+                <input type="text" id="direccion" name="direccion" class="form-control form-control-neon" required placeholder="Calle, Carrera, Apto, Edificio o Barrio">
+              </p>
+
+              <p class="col-12 col-md-4 mb-0">
+                <label for="zona" class="form-label text-white-50 small fw-bold">Zona / Sector:</label>
+                <select id="zona" name="zona" class="form-select form-select-neon" required>
+                  <option value="" disabled selected>Seleccionar...</option>
+                  <option value="centro">Centro / Berrío</option>
+                  <option value="poblado">El Poblado</option>
+                  <option value="laureles">Laureles / Estadio</option>
+                  <option value="envigado">Envigado</option>
+                  <option value="bello">Bello</option>
+                </select>
+              </p>
+
+              <p class="col-12 mb-0">
+                <label for="indicaciones" class="form-label text-white-50 small fw-bold">Notas de Entrega (Opcional):</label>
+                <textarea id="indicaciones" name="indicaciones" class="form-control form-control-neon" rows="2" placeholder="Ej. Timbrar en el apto 402 / Dejar en portería"></textarea>
+              </p>
+
+              <p class="col-12 mb-0">
+                <label class="form-label text-white-50 small fw-bold d-block mb-2">Método de Pago:</label>
+                <section class="d-flex gap-3 flex-wrap">
+                  <label class="form-check-label d-flex align-items-center gap-2 cursor-pointer bg-dark-soft p-3 rounded-4 border border-glass flex-grow-1">
+                    <input type="radio" name="pago" value="nequi" class="form-check-input" checked required>
+                    <span>📱 Nequi / Bancolombia</span>
+                  </label>
+                  <label class="form-check-label d-flex align-items-center gap-2 cursor-pointer bg-dark-soft p-3 rounded-4 border border-glass flex-grow-1">
+                    <input type="radio" name="pago" value="efectivo" class="form-check-input" required>
+                    <span>💵 Efectivo Contraentrega</span>
+                  </label>
+                </section>
+              </p>
+
+            </section>
+          </fieldset>
+
+        </section>
+
+        <aside class="col-12 col-lg-5">
+          <article class="glass-card p-4 p-md-5 rounded-5 border border-cyan-subtle sticky-top top-100 shadow-glass">
+            <header class="border-bottom border-glass pb-3 mb-4 d-flex justify-content-between align-items-center">
+              <h2 class="h4 fw-black text-white m-0">RESUMEN DE ORDEN</h2>
+              <i class="bi bi-receipt text-cyan fs-3" aria-hidden="true"></i>
+            </header>
+
+            <dl class="row text-white-50 small g-2 mb-4">
+              <dt class="col-8 fw-semibold">Vaso Granizado (16 oz)</dt>
+              <dd class="col-4 text-end text-white fw-bold"><data value="14000">$14.000</data></dd>
+
+              <dt class="col-8 fw-semibold">Base: Blue Raspberry</dt>
+              <dd class="col-4 text-end text-cyan">Incluido</dd>
+
+              <dt class="col-8 fw-semibold">Toppings (Gomitas + Perlas)</dt>
+              <dd class="col-4 text-end text-cyan">Gratis (2x)</dd>
+
+              <dt class="col-8 fw-semibold">Costo de Envío (Express)</dt>
+              <dd class="col-4 text-end text-white fw-bold"><data value="4500">$4.500</data></dd>
+
+              <hr class="border-glass my-3">
+
+              <dt class="col-6 fs-5 fw-black text-white">TOTAL A PAGAR:</dt>
+              <dd class="col-6 text-end fs-3 fw-black text-cyan m-0"><data value="18500">$18.500</data></dd>
+            </dl>
+
+            <aside class="p-3 bg-dark-soft rounded-4 border border-glass mb-4 d-flex align-items-center gap-3">
+              <span class="fs-2">🧊</span>
+              <p class="small text-white-50 m-0">
+                <strong class="text-white d-block">Garantía Térmica -5°C</strong>
+                Si el granizado llega derretido, te lo cambiamos gratis.
+              </p>
+            </aside>
+
+            <button type="submit" class="btn btn-neon-cyan btn-lg w-100 fw-black py-3 rounded-4 shadow-neon mb-3">
+              CONFIRMAR Y PEDIR YA <i class="bi bi-arrow-right ms-2" aria-hidden="true"></i>
+            </button>
+
+            <p class="text-center text-white-50 extra-small m-0">
+              <i class="bi bi-shield-lock me-1" aria-hidden="true"></i> Transacción 100% segura. Confirmación inmediata por WhatsApp.
+            </p>
+          </article>
+        </aside>
+
+      </section>
+    </form>
+  </main>
+
+  <footer class="footer-glass mt-auto border-top border-glass py-5">
+    <section class="container text-center text-white-50 small">
+      <p class="m-0">&copy; <time datetime="2026">2026</time> URBAN DRINK. Todos los derechos reservados.</p>
+    </section>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
